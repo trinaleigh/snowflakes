@@ -12,17 +12,19 @@ h1 {
 	padding: 0em 0.5em 0em 0.5em;
 }
 
+.option-display {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+}
+
 .hex {
 	width: 200px;
 	height: 200px;
-	background-size: 200px 200px;
-	background-repeat: no-repeat;
-	margin: none;
-}
-
-.option-display {
-	display: flex;
-	flex-direction: row
+	margin: 20px;
 }
 
 .snowflake {
@@ -38,5 +40,6 @@ h1 {
 	background-color: transparent;
 	position: absolute;
 	left: 25%;
-	top: 25%;
+	top: 0%;
+	transform-origin: 50% 100%;
 }
