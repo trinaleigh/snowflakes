@@ -1,4 +1,4 @@
-const selector = (state = '', action) => {
+const selector = (state = 'triangle', action) => {
 	if (action.type === 'SELECT_IMAGE') {
         return action.image
 	} else {

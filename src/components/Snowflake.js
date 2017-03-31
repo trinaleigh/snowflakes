@@ -4,7 +4,7 @@ const Snowflake = ({ hexagon, visible }) => {
 
 	var sliceArray = []
 	for (let angle = 0; angle < 360; angle += 60) {
-		var src = "url('images/" + hexagon + ".png')"
+		var src = "images/" + hexagon + ".png"
 		var transform = "rotate(" + angle + "deg)"
 		sliceArray.push(<img src={src} style={{ transform: transform }}/>)
 	}
