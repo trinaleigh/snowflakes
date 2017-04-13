@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-const Snowflake = ({ hexagons, visible }) => {
+const Snowflake = ({ hexagons }) => {
 
 	var sliceArray = []
 	for (let hexagon of hexagons){
@@ -21,8 +21,7 @@ const Snowflake = ({ hexagons, visible }) => {
 }
 
 Snowflake.propTypes = {
-	hexagons: PropTypes.array.isRequired,
-	visible: PropTypes.bool.isRequired
+	hexagons: PropTypes.array.isRequired
 }
 
 export default Snowflake

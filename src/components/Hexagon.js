@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-const Hexagon = ({ name, selected, visible, selectClick }) => (
+const Hexagon = ({ name, selected, selectClick }) => (
 
 	<img className="hex" 
 		onClick={selectClick} 
@@ -12,7 +12,6 @@ const Hexagon = ({ name, selected, visible, selectClick }) => (
 Hexagon.propTypes = {
 	name: PropTypes.string.isRequired,
 	selected: PropTypes.bool.isRequired,
-	visible: PropTypes.bool.isRequired,
 	selectClick: PropTypes.func.isRequired
 }
 

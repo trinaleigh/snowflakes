@@ -1,8 +1,8 @@
 const drawing = (state = false, action) => {
-	if (action.type === 'RESET'){
-		return false
-	} else if (action.type === 'ANIMATE'){
+	if (action.type === 'START_DRAW'){
 		return true
+	} else if (action.type === 'STOP_DRAW'){
+		return false
 	} else {
 		return state
 	}

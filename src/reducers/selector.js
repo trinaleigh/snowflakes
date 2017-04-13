@@ -6,6 +6,8 @@ const selector = (state = ['line'], action) => {
 		} else {
 			return state.concat(action.image)
 		} 
+	} else if (action.type === 'RESET') {
+		return []
 	} else {
 		return state
 	}
