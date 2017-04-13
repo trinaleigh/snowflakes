@@ -2,7 +2,11 @@ import React, { PropTypes } from 'react'
 
 const Hexagon = ({ name, selected, visible, selectClick }) => (
 
-	<img className="hex" onClick={selectClick} src={"images/" + name + ".png"}/>
+	<img className="hex" 
+		onClick={selectClick} 
+		src={"images/" + name + ".png"} 
+		style={{ boxShadow: selected ? "0px 0px 2px 2px var(--secondary)" : "none" }}
+	/>
 )
 
 Hexagon.propTypes = {

@@ -9,7 +9,6 @@ const Snowflake = ({ hexagons, visible }) => {
 			var transform = "rotate(" + angle + "deg)"
 			sliceArray.push(<img src={src} style={{ transform: transform }}/>)
 		}
-	console.log(hexagon)
 	}
 
 
