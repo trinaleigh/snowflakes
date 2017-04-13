@@ -1,6 +1,11 @@
-const selector = (state = 'line', action) => {
+const selector = (state = ['line'], action) => {
 	if (action.type === 'SELECT_IMAGE') {
-        return action.image
+		if (state.includes(action.image)) {
+			var index = state.indexOf(action.image);
+			return state.slice(0, index).concat(state.slice(index + 1))
+		} else {
+			return state.concat(action.image)
+		} 
 	} else {
 		return state
 	}

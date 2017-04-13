@@ -1,5 +1,4 @@
 export const selectImage = (slice) => {
-	console.log(slice)
 	return {
 		type: 'SELECT_IMAGE',
 		image: slice

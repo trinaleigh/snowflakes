@@ -5,7 +5,7 @@ import { selectImage } from '../actions'
 const mapStateToProps = (state, ownProps) => {
 	return {
 		name: ownProps.name,
-		selected: state.selector === ownProps.name, 
+		selected: state.selector.includes(ownProps.name), 
 		visible: state.drawing === false
 	} 
 }
